@@ -25,7 +25,7 @@ SECRET_KEY = '&833yw#tvkroq&jd)6#(ovljy1@pv=p^uh)-9i!j^ept$vbi7j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'https://crudapp-vuejs.netlify.app']
 
 
 # Application definition
@@ -58,7 +58,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8000',
+    'http://localhost:8000', 'http://localhost:8081', 'https://crudapp-vuejs.netlify.app/'
 )
 
 ROOT_URLCONF = 'DjangoRestApisPostgreSQL.urls'
